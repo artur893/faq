@@ -7,7 +7,7 @@ const questionsHolders = document.querySelectorAll('.faq-component__single-quest
 const answerElements = document.querySelectorAll('.faq-component__answer')
 
 questionsHolders.forEach((questionHolder) => {
-    questionHolder.addEventListener('click', () => {
+    questionHolder.querySelector('.faq-component__title').addEventListener('click', () => {
         if (questionHolder.querySelector('.faq-component__answer').getAttribute('class') === 'faq-component__answer active') {
             closeQuestionHolders()
         } else {
