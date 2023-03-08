@@ -1,0 +1,39 @@
+#home-page {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    color: var(--font-color);
+    background-color: var(--bg-color-main);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-component {
+    width: 772px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & &__header {
+        width: 336px;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 38.4px;
+        text-align: center;
+    }
+
+    & &__single-question-holder {
+        background-color: var(--bg-color-faq);
+        border: solid 1.5px rgba(255, 255, 255, 0.07);
+        border-radius: 28px;
+
+    }
+
+    & &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
