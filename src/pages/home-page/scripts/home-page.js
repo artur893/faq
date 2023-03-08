@@ -14,12 +14,16 @@ questionsHolders.forEach((questionHolder) => {
             closeQuestionHolders()
             questionHolder.querySelector('i').classList.remove('fa-plus')
             questionHolder.querySelector('i').classList.add('fa-minus')
+            questionHolder.classList.add('active')
             questionHolder.querySelector('.faq-component__answer').classList.add('active')
         }
     })
 })
 
 function closeQuestionHolders() {
+    questionsHolders.forEach((questionHolder) => {
+        questionHolder.classList.remove('active')
+    })
     answerElements.forEach((answer) => {
         answer.classList.remove('active')
     })
