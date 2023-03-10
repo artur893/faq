@@ -87,3 +87,38 @@
     }
 
 }
+
+@media screen and (max-width: 834px) {
+    .faq-component {
+        width: 807px;
+        margin-top: 48px;
+
+        & &__header {
+            margin-bottom: 32px;
+            width: 257px;
+            font-size: 24px;
+            line-height: 28.8px;
+        }
+
+        & &__title {
+            height: 82px;
+            padding: 0px 32px 0px 32px;
+        }
+
+        & &__question {
+            font-size: 16px;
+            line-height: 19.2px;
+        }
+
+        & &__answer {
+            width: 744px;
+            font-size: 14px;
+            letter-spacing: -0.14px;
+
+            &.active {
+                line-height: 22.4px;
+                margin: -8px 32px 30px 32px;
+            }
+        }
+    }
+}
