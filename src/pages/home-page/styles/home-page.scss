@@ -88,7 +88,7 @@
 
 }
 
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 1023px) {
     .faq-component {
         width: 807px;
         margin-top: 48px;
@@ -123,6 +123,48 @@
                 line-height: 22.4px;
                 margin: -5px 32px 28px 32px;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 829px) {
+    .faq-component {
+        width: 347px;
+        margin-left: 4px;
+
+
+        & &__header {
+            width: 257px;
+        }
+
+        & &__title {
+            height: auto;
+            padding: 24px 32px 24px 32px;
+        }
+
+
+        & &__question {
+            width: 245px;
+            line-height: 19px;
+        }
+
+        & &__answer {
+            width: 283px;
+
+            &.active {
+                line-height: 21.8px;
+                margin: 0px 32px 23.5px 32px;
+            }
+
+        }
+
+        .padding-s {
+            padding: 22.5px 32px;
+        }
+
+        .text-l {
+            font-size: 18px;
+            line-height: 21.6px;
         }
     }
 }
