@@ -168,3 +168,27 @@
         }
     }
 }
+
+@media screen and (max-width: 374px) {
+    .faq-component {
+        width: 100%;
+
+        & &__single-question-holder {
+            width: 90%;
+            margin: auto;
+        }
+
+        & &__question {
+            width: 85%;
+        }
+
+        & &__answer {
+            width: 80%;
+            margin: auto;
+
+            &.active {
+                margin: 0px auto 23.5px auto;
+            }
+        }
+    }
+}
